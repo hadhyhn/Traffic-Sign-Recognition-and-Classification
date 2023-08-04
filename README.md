@@ -25,5 +25,6 @@ Dense Layers: There is one Dense layer with 500 neurons, which is followed by a 
 Dropout Layer: A Dropout layer with a rate of 0.5 is added after the Dense layer to reduce overfitting during training.
 Output Layer: The final Dense layer consists of 43 neurons (equal to the number of classes in the dataset) with a softmax activation function. This layer produces the probability distribution over the 43 classes, indicating the predicted class for each input image.
 
-Model Compilation: 
+7.Model Compilation:
+
 The model is compiled using the Adam optimizer with a learning rate of 0.001. The categorical cross-entropy loss function is chosen since this is a multi-class classification problem. The metric used to evaluate the model's performance is accuracy.
