@@ -16,7 +16,7 @@ https://www.kaggle.com/meowmeowmeowmeowmeow/gtsrb-german-traffic-sign
 
 5.Data Flow and Visualization: The batches variable is used to flow the augmented data in batches during training. The next function is used to retrieve the next batch of augmented data. The code then visualizes the first 15 images from the augmented batch.
 
-6.Model Architecture:
+#6.Model Architecture:
 Convolutional Layers: The model begins with three sets of Convolutional layers, each followed by a ReLU activation function. The convolutional layers are used to extract feature maps from the input images. The first set consists of 60 filters with a kernel size of (5, 5), followed by another set of 60 filters, and finally, a third set of 30 filters with a kernel size of (5, 5).
 MaxPooling Layers: After each set of Convolutional layers, a MaxPooling layer with a pool size of (2, 2) is applied to reduce spatial dimensions and focus on the most salient features.
 Flatten Layer: The output of the last MaxPooling layer is flattened into a 1-dimensional vector to be fed into the dense layers.
