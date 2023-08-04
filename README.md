@@ -16,7 +16,8 @@ https://www.kaggle.com/meowmeowmeowmeowmeow/gtsrb-german-traffic-sign
 
 5.Data Flow and Visualization: The batches variable is used to flow the augmented data in batches during training. The next function is used to retrieve the next batch of augmented data. The code then visualizes the first 15 images from the augmented batch.
 
-#6.Model Architecture:
+6.Model Architecture:
+
 Convolutional Layers: The model begins with three sets of Convolutional layers, each followed by a ReLU activation function. The convolutional layers are used to extract feature maps from the input images. The first set consists of 60 filters with a kernel size of (5, 5), followed by another set of 60 filters, and finally, a third set of 30 filters with a kernel size of (5, 5).
 MaxPooling Layers: After each set of Convolutional layers, a MaxPooling layer with a pool size of (2, 2) is applied to reduce spatial dimensions and focus on the most salient features.
 Flatten Layer: The output of the last MaxPooling layer is flattened into a 1-dimensional vector to be fed into the dense layers.
@@ -24,4 +25,5 @@ Dense Layers: There is one Dense layer with 500 neurons, which is followed by a 
 Dropout Layer: A Dropout layer with a rate of 0.5 is added after the Dense layer to reduce overfitting during training.
 Output Layer: The final Dense layer consists of 43 neurons (equal to the number of classes in the dataset) with a softmax activation function. This layer produces the probability distribution over the 43 classes, indicating the predicted class for each input image.
 
-Model Compilation: The model is compiled using the Adam optimizer with a learning rate of 0.001. The categorical cross-entropy loss function is chosen since this is a multi-class classification problem. The metric used to evaluate the model's performance is accuracy.
+Model Compilation: 
+The model is compiled using the Adam optimizer with a learning rate of 0.001. The categorical cross-entropy loss function is chosen since this is a multi-class classification problem. The metric used to evaluate the model's performance is accuracy.
